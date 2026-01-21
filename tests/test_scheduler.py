@@ -91,7 +91,7 @@ def test_cancellation_prevents_execution():
         handle.cancel()
         time.sleep(0.3)
 
-        verify(task_spy, times=0)()
+        verify(task_spy, times=0).__call__()
     finally:
         scheduler.shutdown(wait=True)
 
