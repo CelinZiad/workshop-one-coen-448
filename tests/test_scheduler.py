@@ -74,7 +74,7 @@ def test_cancelled_task_does_not_run(scheduler):
     handle.cancel()
 
     time.sleep(0.1)
-    verify(task_spy, times=0)()
+    verify(task_spy, times=0).__call__()
 
 
 def test_interval_task_runs_multiple_times(scheduler):
