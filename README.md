@@ -3,5 +3,5 @@
 ## How to run the project
 
 ```powershell
-python mian.py
+python main.py
 ```
